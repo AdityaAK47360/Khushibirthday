@@ -74,7 +74,7 @@ const questions = [
       "Calling friends"
     ],
     correct: 2,
-    feedback: "Neend hi sab kuch hai! 😂 Best emotional support — no drama, just zzz..."
+    feedback: "Neend hi sab kuch hai! 😂 "
   },
   {
     text: "Instagram pe tumhari favourite reels konsi hoti hain?",
@@ -107,7 +107,7 @@ const questions = [
       "Gift nahi diya"
     ],
     correct: 2,
-    feedback: "Panda costume mein birthday surprise — dream reh gaya! 🐼"
+    feedback: "Panda costume mein birthday surprise —🐼"
   }
 ];
 
@@ -195,11 +195,11 @@ function showResult() {
   document.getElementById('percent-display').textContent = pct + '%';
   
   let desc = '';
-  if (pct === 100) desc = "100%!! Main tujhe usse bhi zyada jaanta hoon jitna tu khud ko jaanti hai! 🏆 Bilkul sahi! Friendship goals!";
-  else if (pct >= 80) desc = `${pct}% — Bhai waah! Main tujhe kaafi acchi tarah jaanta hoon! Itni deep friendship hai humari 🌸 Almost perfect!`;
-  else if (pct >= 60) desc = `${pct}% — Theek thak jaanta hoon tujhe! Kuch secrets abhi bhi chhupaati hai tu 😄 But acha score hai!`;
-  else if (pct >= 40) desc = `${pct}% — Hmm, thodi aur baat karna chahiye tha humein! Ab zyada khuljayenge 😅`;
-  else desc = `${pct}% — Lagta hai tu zyada mysterious hai jitna maine socha tha! But dosti toh dil se hai 💖`;
+  if (pct === 100) desc = "100%!! !";
+  else if (pct >= 80) desc = `${pct}% — !`;
+  else if (pct >= 60) desc = `${pct}% — `;
+  else if (pct >= 40) desc = `${pct}% — Hmm, 😅`;
+  else desc = `${pct}% — 💖`;
   
   document.getElementById('score-desc').innerHTML = desc;
   launchConfetti();
