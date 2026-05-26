@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Khushi 🎀</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<!-- ===== WELCOME SECTION ===== -->
+<section id="welcome-section">
+  <div style="position:relative;z-index:2;width:100%;max-width:650px;">
+    <span class="crown-emoji">👑</span>
+    <div class="welcome-tag">✦ Special Birthday Edition ✦</div>
+    <h1 class="welcome-title">Happy <span>Birthday</span></h1>
+    <span class="welcome-name">Khushi</span>
+
+    <p class="welcome-message">
+      You deserve a celebration as bright, warm, and full of energy as you are. 🌸<br>
+      Today is entirely yours &mdash; a day filled with joy, laughter, and all the good things life has to offer. May every single day of your life carry the happiness that your name truly represents. 🎂
+    </p>
+
+    <div class="memory-box">
+      Do you remember that college fest day? That campus visit holds a very special place &mdash; genuinely one of the best experiences I have had 😄<br><br>
+      And do you remember that lady? Those conversations, that moment &mdash; still so memorable 😁<br><br>
+      And your <em>red carpet walk</em> &mdash; that confidence, that grace, that pure joy you carried &mdash; was something truly unforgettable. May you always walk through life with exactly that happiness. ❤️
+    </div>
+
+    <p style="font-size:0.9rem;color:var(--text-soft);margin-bottom:1.5rem;font-weight:400;">
+      Now let's find out how well I truly know <strong style="color:var(--mauve);">you</strong>, Khushi 👇
+    </p>
+
+    <button class="start-btn" onclick="startQuiz()">
+      🎀 Start the Quiz
+    </button>
+  </div>
+
+  <span class="decorative-dots" style="top:12%;left:6%;font-size:2rem;">✦</span>
+  <span class="decorative-dots" style="top:25%;right:8%;font-size:1rem;animation-delay:1s;">♡</span>
+  <span class="decorative-dots" style="bottom:20%;left:10%;font-size:1.5rem;animation-delay:0.5s;">✿</span>
+  <span class="decorative-dots" style="bottom:30%;right:6%;font-size:1.8rem;animation-delay:1.5s;">✦</span>
+</section>
+
+<!-- ===== QUIZ SECTION ===== -->
+<section id="quiz-section">
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <h2>How well do I know <em>Khushi</em>? 🌸</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-label">
+          <span id="q-counter">Question 1 of 10</span>
+          <span id="score-live">Score: 0 ✓</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="question-card" id="question-card">
+      <div class="question-number" id="q-num">Question 01</div>
+      <p class="question-text" id="q-text"></p>
+      <div class="options-grid" id="options-grid"></div>
+      <div class="feedback-msg" id="feedback-msg"></div>
+      <div style="overflow:hidden;margin-top:0.5rem;">
+        <button class="next-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESULT SECTION ===== -->
+<section id="result-section">
+  <div class="result-container">
+    <span class="result-crown">🎂</span>
+    <h2 class="result-title">Quiz Complete,<br><span>Khushi!</span></h2>
+
+    <div class="score-card">
+      <div class="score-big" id="score-display">0</div>
+      <div class="score-out">out of 10</div>
+      <div class="percent-badge" id="percent-display">0%</div>
+      <p class="percent-desc" id="score-desc">Loading...</p>
+    </div>
+
+    <div class="memory-row">
+      <div class="memory-card">
+        <span class="mem-icon">🏛️</span>
+        <strong>Campus Fest Day</strong>
+        That day on campus was one of the most memorable experiences &mdash; the energy, the vibe, everything felt just right. 💕
+      </div>
+      <div class="memory-card">
+        <span class="mem-icon">🎬</span>
+        <strong>Red Carpet Walk</strong>
+        That walk, that grace, that smile &mdash; a moment that will always be remembered. Truly iconic. ✨
+      </div>
+    </div>
+
+    <div class="final-message">
+      <h3>🌸 Once Again &mdash; Happy Birthday, Khushi!</h3>
+      <p>
+        May this year bring you everything you have ever wished for &mdash; a wonderful career, good health, happiness for your family, and all the peace your heart deserves. You are already gold, Khushi &mdash; never forget that. 🏅
+      </p>
+      <p>
+        
+      </p>
+    </div>
+
+    <div class="big-bday-wrap">
+      <div class="big-bday-line">
+        <span class="bday-word" style="animation-delay:0s">Happy</span>
+        <span class="bday-word" style="animation-delay:0.3s">Birthday</span>
+      </div>
+      <div class="big-bday-line">
+        <span class="bday-word bday-name" style="animation-delay:0.6s">Khushi</span>
+        <span class="bday-word bday-sparkle" style="animation-delay:0.9s">🎉</span>
+      </div>
+      <p class="from-aditya">With warmth &amp; best wishes,<br><strong>Aditya</strong> 🌸</p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js" defer></script>
+</body>
+</html>
