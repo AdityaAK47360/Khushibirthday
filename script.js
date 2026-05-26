@@ -13,7 +13,7 @@ const questions = [
   {
     text: "Call pe tumhara sabse zyada use hone wala word kya hai?",
     options: [
-      "Yaar suno",
+      "hlo",
       "Matlab kya hai",
       "Arr suno na",
       "Accha accha okay"
